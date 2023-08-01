@@ -1,0 +1,89 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#title, .container {
+    margin-left: 10%;
+}
+
+#border-line {
+    height: 4px;
+    background-color: black; 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+#title {
+    padding-top: 2%;
+    margin-bottom: 2%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#intro {
+    font-size: 150px;
+    font-weight: bold;
+}
+
+#intro2, #intro3 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 5%;
+    display: flex;
+    gap: 20%;
+}
+
+#page1, #page3 {
+    position: static;
+    height: 100vh;
+    background-image: url("/Users/xenotion/Desktop/portfolio/imageedit_3_5353738600.png");
+    background-size: cover;
+}
+
+#page2 {
+    position: static; 
+    height: 100vh;
+    background-color: black; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+#arrow-link {
+    margin-top: 18%;
+}
+
+#arrow {
+    height: 300px;
+    width: auto;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translate(0,  0px); }
+    50% { transform: translate(0, 80px); }
+    100% { transform: translate(0, -0px); }
+}
+
+#heading {
+    color: white;
+}
+
+#heading2 {
+    color: black;
+}
