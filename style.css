@@ -63,7 +63,7 @@ html, body {
 #page1 {
     position: static;
     height: 100vh;
-    background-image: url("assets/imageedit_3_5353738600.png");
+    background-image: url("https://raw.githubusercontent.com/Xenotion/Portflio-Website/main/assets/imageedit_3_5353738600.png");
     background-size: cover;
 }
 
@@ -243,7 +243,7 @@ html, body {
     justify-items: center;
     align-items: center;
     padding: 50px;
-    background-image: url("assets/imageedit_3_5353738600.png");
+    background-image: url("https://raw.githubusercontent.com/Xenotion/Portflio-Website/main/assets/imageedit_3_5353738600.png");
 }
 
 #unimelb-section, #uiuc-section {
