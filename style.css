@@ -15,6 +15,13 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+    background-image: url("https://raw.githubusercontent.com/Xenotion/Portflio-Website/main/assets/imageedit_3_5353738600.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 #title, .container {
     margin-left: 10%;
 }
@@ -61,28 +68,19 @@ html, body {
 }
 
 #page1 {
-    position: static;
-    height: 100vh;
-    background-image: url("https://raw.githubusercontent.com/Xenotion/Portflio-Website/main/assets/imageedit_3_5353738600.png");
-    background-size: cover;
-}
-
-#page1 {
     color: black;
 }
 
 #page2 {
     position: static; 
-    height: 100vh;
-    background-color: black;
     width: 100%; 
     margin: 0 auto;
-    color: white;
+    color: black;
     padding: 20px;
 }
 
 #arrow-link {
-    margin-top: 18%;
+    margin-top: 15%;
 }
 
 #arrow {
@@ -93,7 +91,7 @@ html, body {
 
 @keyframes float {
     0% { transform: translate(0,  0px); }
-    50% { transform: translate(0, 80px); }
+    50% { transform: translate(0, 40px); }
     100% { transform: translate(0, -0px); }
 }
 
@@ -121,7 +119,7 @@ html, body {
 }
   
 #heading {
-    color: white;
+    color: black;
     font-size: 3rem;
     font-weight: 100;
     line-height: 1.5;
@@ -148,7 +146,7 @@ html, body {
     padding-left: 0.5rem;
     top: 0.2rem;
     left: 30%;
-    animation: openclose 5s ease-in-out infinite;
+    animation: openclose 10s ease-in-out infinite;
     color: white;
 }
 
@@ -217,24 +215,6 @@ html, body {
     }
 }
 
-.swe {
-    position: relative;
-    white-space: nowrap;
-    &:after {
-        --deco-height: 0.3125em;
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: calc(var(--deco-height) * -0.625);
-        height: var(--deco-height);
-        background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-        background-size: auto 100%;
-        background-repeat: round;
-        background-position: 0em;
-    }
-}
-
 #page3 {
     height: 100vh;
     display: grid;
@@ -243,7 +223,6 @@ html, body {
     justify-items: center;
     align-items: center;
     padding: 50px;
-    background-image: url("https://raw.githubusercontent.com/Xenotion/Portflio-Website/main/assets/imageedit_3_5353738600.png");
 }
 
 #unimelb-section, #uiuc-section {
@@ -287,8 +266,75 @@ img#unimelb:hover, img#uiuc:hover {
     color: black;
 }
 
-#page4 {
-    height: 100vh;
-    background-color: black;
+@media screen and (max-width: 1200px) {
+    #heading {
+        width: 100%;
+    }
+    .message {
+        width: auto;
+        left: 0;
+    }
+    #second-par {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #first-par {
+        font-size: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #intro {
+        font-size: 100px;
+    }
+    #intro2, #intro3 {
+        font-size: 50px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #page3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #arrow {
+        height: 200px;
+    }
+    #heading span {
+        font-size: 20px;
+    }
+    #page2 {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #title, .container {
+        margin-left: 5%;
+    }
+    #title {
+        font-size: 30px;
+    }
+    #intro {
+        font-size: 80px;
+    }
+    #arrow {
+        height: 100px;
+    }
+    #first-par {
+        font-size: 25px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #second-par {
+        padding-left: 5%;
+    }
+    #heading span {
+        font-size: 18px;
+    }
+    img#unimelb, img#uiuc {
+        max-width: 60%;
+    }
 }
   
