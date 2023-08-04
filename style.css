@@ -376,13 +376,13 @@ img#unimelb:hover, img#uiuc:hover {
     text-align: center;
 }
 
-i {
+.section i {
     font-size: 70px;
     margin-bottom: 5px;
     transition: all 0.3s ease; 
 }
 
-i:hover {
+.section i:hover {
     font-size: 100px; 
 }
 
@@ -404,5 +404,53 @@ i:hover {
     font-size: 40px; 
 }
 
+.email-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #4A90E2;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: auto;
+    gap: 20%;
+}
+
+.social-links a {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
   
