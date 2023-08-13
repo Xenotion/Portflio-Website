@@ -10,9 +10,6 @@ html {
 
 html, body {
     height: 100%;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 body {
@@ -20,6 +17,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 #title, .container {
